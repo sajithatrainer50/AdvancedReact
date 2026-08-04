@@ -1,0 +1,7 @@
+body {
+  background-color: #f8f9fa;
+}
+
+.render-badge {
+  transition: background-color 0.3s ease;
+}
