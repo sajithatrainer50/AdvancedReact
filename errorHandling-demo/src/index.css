@@ -1,0 +1,35 @@
+:root {
+  --ink: #16181d; --ink2: #5c6470; --ink3: #8b93a1;
+  --line: #e3e4e0; --ok: #0b6e56; --bad: #c2410c;
+  --mono: ui-monospace, "SF Mono", Menlo, monospace;
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, sans-serif; background: #f7f7f5; color: var(--ink); font-size: 14px; line-height: 1.5; }
+button { font: inherit; cursor: pointer; }
+
+.shell { display: grid; grid-template-columns: 250px 1fr; min-height: 100vh; }
+.rail { background: var(--ink); padding: 22px 12px; }
+.rail h1 { color: #fff; font-size: 15px; margin: 0 0 4px; padding: 0 10px; }
+.rail p { color: #6ee7b7; font-family: var(--mono); font-size: 10px; letter-spacing: .08em; text-transform: uppercase; margin: 0 0 18px; padding: 0 10px; }
+.rail button { display: block; width: 100%; text-align: left; background: none; border: 0; color: #9aa3af; padding: 9px 10px; border-radius: 6px; font-size: 13px; }
+.rail button:hover { background: #23262d; color: #fff; }
+.rail button.on { background: #23262d; color: #fff; }
+
+.page { padding: 32px 36px 60px; max-width: 720px; }
+.page h2 { font-size: 22px; margin: 0 0 6px; letter-spacing: -.02em; }
+.page .sub { color: var(--ink2); margin: 0 0 6px; }
+.page .ask { border-left: 3px solid var(--ok); background: #fff; padding: 10px 14px; margin: 14px 0 22px; }
+
+.card { background: #fff; border: 1px solid var(--line); border-radius: 10px; padding: 18px; margin-bottom: 14px; }
+.card h3 { margin: 0 0 10px; font-size: 14px; }
+.row { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.card button { border: 1px solid var(--ink); background: var(--ink); color: #fff; padding: 7px 14px; border-radius: 6px; }
+.card button.ghost { background: #fff; color: var(--ink2); border-color: var(--line); }
+.card input, .card select { padding: 7px 10px; border: 1px solid var(--line); border-radius: 6px; font: inherit; }
+
+.n { font-family: var(--mono); font-size: 26px; display: block; letter-spacing: -.02em; }
+.lbl { display: block; font-size: 10px; text-transform: uppercase; letter-spacing: .06em; color: var(--ink3); }
+.ok { color: var(--ok); } .bad { color: var(--bad); }
+.mono { font-family: var(--mono); font-size: 12px; }
+.note { font-size: 13px; color: var(--ink2); margin: 12px 0 0; }
+.hint { font-size: 12px; color: var(--ink3); }
